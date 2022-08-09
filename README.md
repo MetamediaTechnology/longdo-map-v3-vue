@@ -18,7 +18,7 @@ Longdo Map (API v3) component for Vue.js
 - [References](#references)
 
 ## Getting Started
--123
+
 ### Requirement
 - [Vue](https://vuejs.org/)
 > The current version of Longdo Map Vue does not support Vue 3.
