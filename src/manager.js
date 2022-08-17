@@ -1,6 +1,6 @@
 const manager = {
   apiKey: null,
-  src: 'https://api.longdo.com/map/',
+  src: 'https://api.longdo.com/map3/',
   promise: null,
   beforeInit: null,
   debug: false,
