@@ -162,15 +162,23 @@ export default {
 * [longdo-map-lock-map](#lock-map)
 * [longdo-map-lock-screen](#lock-screen)
 * [longdo-map-custom-ui](#custom-ui)
-* [longdo-map-marker-cluster](#marker-cluster)
-* [longdo-map-heatmap](#heatmap)
 * [longdo-map-panorama](#panorama)
 
 ### Map
 - [Props](http://api.longdo.com/map/doc/ref.php#MapOptions)
 - Event: `@load="Function(object)"`
 ```html
-<longdo-map :zoom="10" :lastView="false" />
+<longdo-map @load="loadMap" :zoom="10" :lastView="false" />
+```
+```js
+export default {
+    methods: {
+        map.Event.bind("ready", () => {
+            map.language("en");
+            map.Layers.insert(1, window.longdo.Layers.TRAFFIC);
+      });
+    }
+}
 ```
 
 ### Overlay
@@ -248,28 +256,6 @@ Handler function(currentMenuItem: Object, lastMenuItem: Object): void when user 
     </longdo-map-custom-ui>
 </longdo-map>
 ```
-
-### Marker Cluster
-```html
-<longdo-map>
-    <longdo-map-marker-cluster :markerList="[{ location: { lat: 13.745026, lon: 100.523041 }, options: { icon: {} } }, ... ]" />
-</longdo-map>
-```
-[More](https://github.com/MetamediaTechnology/markercluster-longdo-map)
-
-### Heatmap
-```html
-<longdo-map>
-    <longdo-map-heatmap
-        :data="{ max: 10, data:[{ lat:60.087195, lon:84.767761, value:8 }, ...] }"
-        :radius="2"
-        :maxOpacity="0.5"
-        :scaleRadius="true"
-        :userLocalExtrema="true"
-    />
-</longdo-map>
-```
-[More](https://github.com/MetamediaTechnology/heatmap-longdo-map)
 
 ### Panorama
 - Event: `@load="Function(object)"`
