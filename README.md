@@ -173,10 +173,12 @@ export default {
 ```js
 export default {
     methods: {
-        map.Event.bind("ready", () => {
-            map.language("en");
-            map.Layers.insert(1, window.longdo.Layers.TRAFFIC);
-      });
+        loadMap(map) {
+            map.Event.bind("ready", () => {
+                map.language("en");
+                map.Layers.insert(1, window.longdo.Layers.TRAFFIC);
+            });
+        },
     }
 }
 ```
