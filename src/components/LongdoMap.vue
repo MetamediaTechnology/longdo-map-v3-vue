@@ -30,13 +30,17 @@ export default {
       let options = this.getMapOptions();
       options.placeholder = this.$refs.map;
       this.map = new window.longdo.Map(options);
-      if (options.zoomRange) {
-        this.map.zoomRange(options.zoomRange);
-      }
       this.$emit("load", this.map);
 
       this.map.Event.bind("ready", () => {
         this.$emit("mapReady");
+        
+        if (options.language) {
+          this.map.language(options.language);
+        }
+        if (options.zoomRange) {
+          this.map.zoomRange(options.zoomRange);
+        }
       });
     },
   },
