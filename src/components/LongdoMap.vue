@@ -34,11 +34,10 @@ export default {
 
       this.map.Event.bind("ready", () => {
         this.$emit("mapReady");
-        
+
         if (options.language) {
           this.map.language(options.language);
-        }
-        if (options.zoomRange) {
+        }else if (options.zoomRange) {
           this.map.zoomRange(options.zoomRange);
         }
       });
