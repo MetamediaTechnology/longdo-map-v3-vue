@@ -168,19 +168,7 @@ export default {
 - [Props](http://api.longdo.com/map/doc/ref.php#MapOptions)
 - Event: `@load="Function(object)"`
 ```html
-<longdo-map @load="loadMap" :zoom="10" :lastView="false" />
-```
-```js
-export default {
-    methods: {
-        loadMap(map) {
-            map.Event.bind("ready", () => {
-                map.language("en");
-                map.Layers.insert(1, window.longdo.Layers.TRAFFIC);
-            });
-        },
-    }
-}
+<longdo-map :zoom="10" :lastView="false" />
 ```
 
 ### Overlay
