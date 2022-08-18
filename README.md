@@ -26,7 +26,7 @@ Longdo Map (API v3) component for Vue.js
 ### Installation
 You can easily install by using `npm`
 ```cli
-npm i longdo-map-vue
+npm i longdo-map-v3-vue
 ```
 
 ### Usage
@@ -42,7 +42,7 @@ This is a recommended way of registering component
 In your `main.js` or similar file:
 ```js
 import Vue from 'vue'
-import LongdoMap from 'longdo-map-vue'
+import LongdoMap from 'longdo-map-v3-vue'
 
 Vue.use(LongdoMap, {
     load: {
@@ -65,7 +65,7 @@ In your component file, for example `Foo.vue`:
 </template>
 ```
 ```js
-import { LongdoMap } from 'longdo-map-vue'
+import { LongdoMap } from 'longdo-map-v3-vue'
 LongdoMap.init({ apiKey: 'YOUR_LONGDO_MAP_API_KEY' })
 
 export default {
@@ -77,7 +77,7 @@ export default {
 ```
 You can import more components if you want, for example:
 
-`import { LongdoMap, LongdoMapMarker } from 'longdo-map-vue'`
+`import { LongdoMap, LongdoMapMarker } from 'longdo-map-v3-vue'`
 
 ## Examples
 Add a polygon to Longdo Map:
