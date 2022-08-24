@@ -32,13 +32,14 @@ export default {
       this.map = new window.longdo.Map(options);
       this.$emit("load", this.map);
 
+      if (options.zoomRange) {
+        this.map.zoomRange(options.zoomRange);
+      }
+      
       this.map.Event.bind("ready", () => {
         this.$emit("mapReady");
-
         if (options.language) {
           this.map.language(options.language);
-        }else if (options.zoomRange) {
-          this.map.zoomRange(options.zoomRange);
         }
       });
     },
