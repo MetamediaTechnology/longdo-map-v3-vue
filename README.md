@@ -159,7 +159,6 @@ export default {
 * [longdo-map-polygon](#geometry)
 * [longdo-map-menu-bar](#menu-bar)
 * [longdo-map-custom-control](#custom-control)
-* [longdo-map-lock-map](#lock-map)
 * [longdo-map-custom-ui](#custom-ui)
 
 ### Map
