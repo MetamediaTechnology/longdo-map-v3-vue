@@ -25,7 +25,7 @@ export default {
   },
   methods: {
     addCustomControl () {
-      this.customControl = new window.longdo.CustomControl({ html: this.html })
+      this.customControl = new window.longdo.CustomControl(this.html)
       this.$parent.map.Ui.add(this.customControl)
       this.$emit('add', this.customControl)
     }

@@ -24,10 +24,6 @@ export default {
     dropdownLabel: {
       type: String,
       default: null
-    },
-    change: {
-      type: Function,
-      default: null
     }
   },
   mounted () {
@@ -51,8 +47,8 @@ export default {
       if (this.dropdownLabel) {
         options.dropdownLabel = this.dropdownLabel
       }
-      if (this.change) {
-        options.change = this.change
+      options.change = (currentMenuItem, lastMenuItem) => {
+        this.$emit('change', currentMenuItem, lastMenuItem)
       }
       this.menuBar = new window.longdo.MenuBar(options)
       this.$parent.map.Ui.add(this.menuBar)

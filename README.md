@@ -15,6 +15,7 @@ Longdo Map (API v3) component for Vue.js
 - [Examples](#examples)
 - [Components](#components)
 - [Documentation](#documentation)
+- [Community](#community)
 - [References](#references)
 
 ## Getting Started
@@ -157,12 +158,9 @@ export default {
 * [longdo-map-polycurve](#geometry)
 * [longdo-map-polygon](#geometry)
 * [longdo-map-menu-bar](#menu-bar)
-* [longdo-map-tag-panel](#tag-panel)
 * [longdo-map-custom-control](#custom-control)
 * [longdo-map-lock-map](#lock-map)
-* [longdo-map-lock-screen](#lock-screen)
 * [longdo-map-custom-ui](#custom-ui)
-* [longdo-map-panorama](#panorama)
 
 ### Map
 - [Props](http://api.longdo.com/map/doc/ref.php#MapOptions)
@@ -200,40 +198,21 @@ export default {
 
 ### Menu Bar
 - [Props](http://api.longdo.com/map/doc/ref.php#MenuBarOptions)
+- Event: `@add="Function(object)"`
+- Event: `@change="Function(currentMenuItem: Object, lastMenuItem: Object)"`
 ```html
 <longdo-map>
-    <longdo-map-menu-bar :button="[{ label: 'first', value: 1 }]" :dropdown="[{ label: 'Normal' }]" :dropdownLabel="'more'" :change="handlerFunction" />
+    <longdo-map-menu-bar :button="[{ label: 'first', value: 1 }, { label: 'second', value: 2 }]" />
 </longdo-map>
 ```
-Handler function(currentMenuItem: Object, lastMenuItem: Object): void when user change menu
-
-### Tag Panel
-- [Props](http://api.longdo.com/map/doc/ref.php#TagPanelOptions)
-```html
-<longdo-map>
-    <longdo-map-tag-panel :tag="['temple', 'sizzler']" />
-</longdo-map>
-```
+*** support button type only
 
 ### Custom Control
 - [Props](http://api.longdo.com/map/doc/ref.php#CustomControlOptions)
+- Event: `@add="Function(object)"`
 ```html
 <longdo-map>
     <longdo-map-custom-control :html="'<button>button</button>'" />
-</longdo-map>
-```
-
-### Lock Map
-```html
-<longdo-map>
-    <longdo-map-lock-map :lock="Boolean" />
-</longdo-map>
-```
-
-### Lock Screen
-```html
-<longdo-map>
-    <longdo-map-lock-screen v-model="Boolean" />
 </longdo-map>
 ```
 
@@ -247,18 +226,11 @@ Handler function(currentMenuItem: Object, lastMenuItem: Object): void when user 
 </longdo-map>
 ```
 
-### Panorama
-- Event: `@load="Function(object)"`
-```html
-<longdo-map-panorama
-    :map="map"
-    :showPath="true"
-/>
-<longdo-map @load="obj => map = obj" />
-```
-
 ## Documentation
 * [สอนการใช้ Map API ร่วมกับ Vue.js](https://map.longdo.com/blog/2019/12/03/longdo-map-api-vue-js/)
+
+## Community
+* [Longdo Map API Community - แผนที่ออนไลน์ไทย](https://www.facebook.com/groups/708165893234850)
 
 ## References
 * [Longdo Map](https://map.longdo.com/products)

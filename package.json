@@ -1,18 +1,18 @@
 {
   "name": "longdo-map-v3-vue",
-  "description": "Longdo Map component for Vue.js",
+  "description": "Longdo Map (API v3) component for Vue.js",
   "version": "1.0.0",
   "author": "Metamedia Technology <info@mm.co.th>",
   "license": "MIT",
-  "homepage": "https://github.com/MetamediaTechnology/longdo-map-vue#readme",
+  "homepage": "https://github.com/MetamediaTechnology/longdo-map-v3-vue#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MetamediaTechnology/longdo-map-vue.git"
+    "url": "git+https://github.com/MetamediaTechnology/longdo-map-v3-vue.git"
   },
   "bugs": {
-    "url": "https://github.com/MetamediaTechnology/longdo-map-vue/issues"
+    "url": "https://github.com/MetamediaTechnology/longdo-map-v3-vue/issues"
   },
-  "main": "./dist/longdo-map-vue.common.js",
+  "main": "./dist/longdo-map-v3-vue.common.js",
   "files": [
     "dist/*",
     "src/*",
@@ -22,12 +22,12 @@
   ],
   "private": false,
   "scripts": {
-    "build": "vue-cli-service build --target lib --name longdo-map-vue ./src/index.js"
+    "build": "vue-cli-service build --target lib --name longdo-map-v3-vue ./src/index.js"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.5.0",
-    "@vue/cli-plugin-eslint": "^4.5.0",
-    "@vue/cli-service": "^4.5.0",
+    "@vue/cli-plugin-babel": "^5.0.8",
+    "@vue/cli-plugin-eslint": "^5.0.8",
+    "@vue/cli-service": "^5.0.8",
     "babel-eslint": "^10.0.1",
     "core-js": "^2.6.11",
     "eslint": "^7.6.0",
@@ -61,12 +61,19 @@
   "keywords": [
     "vue",
     "longdo-map-vue",
+    "longdo-map-v3-vue",
     "longdomapvue",
+    "longdomapv3vue",
     "vue-longdomap",
+    "vue-longdomapv3",
+    "vue-longdomap-v3",
     "vuelongdomap",
+    "vuelongdomapv3",
     "longdo",
     "longdomap",
+    "longdomapv3",
     "longdo-map",
+    "longdo-map-v3",
     "map"
   ]
 }
