@@ -1,7 +1,7 @@
 {
   "name": "longdo-map-v3-vue",
   "description": "Longdo Map (API v3) component for Vue.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Metamedia Technology <info@mm.co.th>",
   "license": "MIT",
   "homepage": "https://github.com/MetamediaTechnology/longdo-map-v3-vue#readme",

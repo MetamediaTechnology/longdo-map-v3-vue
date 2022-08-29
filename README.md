@@ -3,9 +3,9 @@
 # longdo-map-v3-vue
 Longdo Map (API v3) component for Vue.js
 
-![npm](https://img.shields.io/npm/v/longdo-map-vue)
-![npm](https://img.shields.io/npm/dt/longdo-map-vue)
-![npm](https://img.shields.io/npm/l/longdo-map-vue)
+![npm](https://img.shields.io/npm/v/longdo-map-v3-vue)
+![npm](https://img.shields.io/npm/dt/longdo-map-v3-vue)
+![npm](https://img.shields.io/npm/l/longdo-map-v3-vue)
 
 ## Table of Contents
 - [Getting Started](#getting-started)
